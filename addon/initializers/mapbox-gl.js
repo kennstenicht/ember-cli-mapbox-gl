@@ -5,7 +5,15 @@ export default {
 
   initialize: function(container, application) {
     application.register('service:mapbox-gl', MapboxGl);
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2VubnN0ZW5pY2h0IiwiYSI6InQtOTF2NFEifQ.BA8aIiRcBFIAGV7Rry9Egw';
+
+    var config = container.lookupFactory('config:environment');
+
+    if (!config.mapbox || !config.mapbox.accessToken) {
+      console.error('Please specify your mapbox.accessToken in your config.');
+      return;
+    }
+
+    mapboxgl.accessToken = config.mapbox.accessToken;
   }
 };
 
