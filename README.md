@@ -9,13 +9,12 @@ Ember CLI addon to integrate Mapbox GL and add a componentn mixin
 
 ## Setup
 
-// config/enviroment.js
-
 changing contentSecurityPolicy:
 * add `*.mapbox.com` to img-src and connect-src
 * add `blob:` to child-src
 
-```javascript
+```js
+// config/enviroment.js
 contentSecurityPolicy: {
 	'img-src': "'self' data: *.mapbox.com",
 	'child-src': "blob:",
