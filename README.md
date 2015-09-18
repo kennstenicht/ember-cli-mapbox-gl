@@ -16,7 +16,16 @@ contentSecurityPolicy: {
 	'child-src': "blob:",
 	'connect-src': "'self' *.mapbox.com"
 }
+```
 
+
+Add your Mapbox access token to config/environment.js:
+
+```js
+// config/environment.js
+mapbox: {
+  accessToken: 'accessToken',
+}
 ```
 
 ## Usage
