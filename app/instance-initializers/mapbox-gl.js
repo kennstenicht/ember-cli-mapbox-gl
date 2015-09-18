@@ -1,0 +1,1 @@
+export {default} from 'ember-cli-mapbox-gl/instance-initializers/mapbox-gl';
