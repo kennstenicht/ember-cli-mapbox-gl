@@ -1,25 +1,48 @@
 # Ember-cli-mapbox-gl
 
-This README outlines the details of collaborating on this Ember addon.
+Ember CLI addon to integrate Mapbox GL and add a componentn mixin
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+* `ember install ember-cli-mapbox-gl`
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Setup
 
-## Running Tests
+// config/enviroment.js
 
-* `ember test`
-* `ember test --server`
+changing contentSecurityPolicy:
+* add `*.mapbox.com` to img-src and connect-src
+* add `blob:` to child-src
 
-## Building
+```javascript
+contentSecurityPolicy: {
+	'img-src': "'self' data: *.mapbox.com",
+	'child-src': "blob:",
+	'connect-src': "'self' *.mapbox.com"
+}
 
-* `ember build`
+```
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Usage
+
+Create a new Component: `ember g component mapbox-map`
+
+```js
+// app/component/mapbox-map
+
+import Ember from 'ember';
+//import mapbox-gl mixin
+import MapboxGl from 'ember-cli-mapbox-gl/mixins/mapbox-gl';
+
+export default Ember.Component.extend(MapboxGl, {
+  // define default map settings
+  mapSettings: {
+    style: "mapbox://styles/mapbox/dark-v8",
+    lat: 52.520007,
+    lng: 13.404954,
+    zoom: 12,
+    interactive: true
+  }
+});
+```
