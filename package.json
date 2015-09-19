@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mapbox-gl",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ember CLI addon to integrate mapbox-gl and add a mapbox-gl mixin",
   "directories": {
     "doc": "doc",
