@@ -3,6 +3,12 @@
 Ember CLI addon to integrate Mapbox GL and add a componentn mixin
 
 
+## Installation
+
+```
+ember install ember-cli-mapbox-gl
+```
+
 ## Setup
 
 changing contentSecurityPolicy:
