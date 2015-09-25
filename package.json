@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-mapbox-gl",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ember CLI addon to integrate mapbox-gl and add a mapbox-gl mixin",
   "directories": {
     "doc": "doc",
@@ -11,12 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/kennstenicht/ember-cli-tuio.git",
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-    "author": "Christoph Wiedenmann",
+  "author": "Christoph Wiedenmann",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
