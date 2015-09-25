@@ -11,11 +11,12 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
+  "repository": "https://github.com/kennstenicht/ember-cli-tuio.git",
   "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+    "author": "Christoph Wiedenmann",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
