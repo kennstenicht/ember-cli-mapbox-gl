@@ -16,7 +16,8 @@ export default Mixin.create({
     lat: 52.520007,
     lng: 13.404954,
     zoom: 12,
-    interactive: true
+    interactive: true,
+    bearing: 0
   },
 
   setupMap: on('didInsertElement', function() {
