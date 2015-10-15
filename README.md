@@ -54,5 +54,11 @@ export default Ember.Component.extend(MapboxGl, {
     zoom: 12,
     interactive: true
   }
+
+  useMapboxFunctions: function() {
+    // this.get('map') returns the map object
+    this.get('map').getZoom();
+  }
+
 });
 ```

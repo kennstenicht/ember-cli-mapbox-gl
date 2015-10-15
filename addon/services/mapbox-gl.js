@@ -19,7 +19,8 @@ export default Service.extend({
       style: mapSettings.style,
       center: {'lat': mapSettings.lat, 'lng': mapSettings.lng},
       zoom: mapSettings.zoom,
-      interactive: mapSettings.interactive
+      interactive: mapSettings.interactive,
+      bearing: mapSettings.bearing
     });
 
     this.set('maps', maps);
