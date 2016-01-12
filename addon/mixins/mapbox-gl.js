@@ -17,7 +17,10 @@ export default Mixin.create({
     lng: 13.404954,
     zoom: 12,
     interactive: true,
-    bearing: 0
+    bearing: 0,
+    minZoom: 0,
+    maxZoom: 20,
+    maxBounds: [[-90,-180], [90,180]]
   },
 
   setupMap: on('didInsertElement', function() {

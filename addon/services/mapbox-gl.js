@@ -20,7 +20,10 @@ export default Service.extend({
       center: {'lat': mapSettings.lat, 'lng': mapSettings.lng},
       zoom: mapSettings.zoom,
       interactive: mapSettings.interactive,
-      bearing: mapSettings.bearing
+      bearing: mapSettings.bearing,
+      minZoom: mapSettings.minZoom,
+      maxZoom: mapSettings.maxZoom,
+      maxBounds: mapSettings.maxBounds
     });
 
     this.set('maps', maps);
