@@ -17,7 +17,7 @@ export default Service.extend({
     maps[mapId] = new mapboxgl.Map({
       container: mapId,
       style: mapSettings.style,
-      center: {'lat': mapSettings.lat, 'lng': mapSettings.lng},
+      center: [mapSettings.lng, mapSettings.lat],
       zoom: mapSettings.zoom,
       interactive: mapSettings.interactive,
       bearing: mapSettings.bearing,

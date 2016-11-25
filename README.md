@@ -18,9 +18,9 @@ changing contentSecurityPolicy:
 ```js
 // config/enviroment.js
 contentSecurityPolicy: {
-	'img-src': "'self' data: *.mapbox.com",
-	'child-src': "blob:",
-	'connect-src': "'self' *.mapbox.com"
+  'img-src': "'self' data: *.mapbox.com",
+  'child-src': "blob:",
+  'connect-src': "'self' *.mapbox.com"
 }
 ```
 
@@ -36,19 +36,20 @@ mapbox: {
 
 ## Usage
 
+Run installer: `ember g ember-cli-mapbox-gl`
+
 Create a new Component: `ember g component mapbox-map`
 
 ```js
 // app/component/mapbox-map
 
 import Ember from 'ember';
-//import mapbox-gl mixin
 import MapboxGl from 'ember-cli-mapbox-gl/mixins/mapbox-gl';
 
 export default Ember.Component.extend(MapboxGl, {
   // define default map settings
   mapSettings: {
-    style: "mapbox://styles/mapbox/dark-v8",
+    style: "mapbox://styles/mapbox/streets-v9",
     lat: 52.520007,
     lng: 13.404954,
     zoom: 12,
@@ -59,6 +60,5 @@ export default Ember.Component.extend(MapboxGl, {
     // this.get('map') returns the map object
     this.get('map').getZoom();
   }
-
 });
 ```

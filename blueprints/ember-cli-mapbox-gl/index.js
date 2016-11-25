@@ -5,7 +5,7 @@ module.exports = {
 
   afterInstall: function() {
     return this.addBowerPackagesToProject([
-      { name: "mapbox-gl-js", target: "0.11.0" }
+      { name: "mapbox-gl-js", source: "nicho90/mapbox-gl-js-bower", target: "0.28.0" }
     ]);
   }
 };
